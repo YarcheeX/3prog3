@@ -47,7 +47,7 @@ public class Comment {
     }
 
     public void printComment(){
-        System.out.printf("Автор: | %s", author);
+        System.out.printf("Автор: %s | ", author);
         upload_date.printDate();
         System.out.printf("Текст: %s\nОтветы: %d", text, answers.size());
     }
