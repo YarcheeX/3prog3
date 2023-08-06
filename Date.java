@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 public class Date{
-    private byte day, month, year;
+    private byte day, month; 
+    private int year;
     final byte  UNDEF = -77;
     public Date(){}
     
@@ -24,8 +25,8 @@ public class Date{
         this.day = (a < 32 && a > 0) ? a : UNDEF;
         a = month.byteValue();
         this.month = (a < 13 && a > 0) ? a : UNDEF;
-        a = year.byteValue();
-        this.year = (a < 2024 && a > 2005) ? a: UNDEF;
+        int b = year.intValue();
+        this.year = (b < 2024 && b > 2005) ? b : UNDEF;
     }
 
 
