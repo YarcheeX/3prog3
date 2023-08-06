@@ -14,24 +14,23 @@ public class Main{
 		Blogger Ivan = new Blogger();
 		bloggers.add(Ivan);
 		bloggers.get(1).setName("QWERTY");
-		bloggers.get(1).setDescription("Good content");
+		bloggers.get(1).setDescription("Хороший контент");
 
 		Photo picture = new Photo();
 
-		picture.setName("Kak delat salto?");
-		picture.setDescription("eto mozhet bit opasno");
-		picture.upload_date.setDate(20,10, 2014);
+		picture.setName("Как делать сальто?");
+		picture.setDescription("Это может быть опасно");
+		picture.upload_date.setDate(20,1, 2018);
 
 		bloggers.get(0).addPost(picture);
 
-		Comment hate_comm = new Comment(new Date(11, 1, 2010), "slomal sebe sheyu", "User");
+		Comment hate_comm = new Comment(new Date(11, 2, 2018), "Сломал себе шею", "User");
 		bloggers.get(0).posts.get(0).addComment(hate_comm);
 
-		Video movie = new Video("top 5 life hackov", "all life hacks were stolen", new Date(11, 1, 2010), new Time(10, 30));
+		Video movie = new Video("Топ 5 лайф-хаков", "Все придумано самостоятельно", new Date(11, 2, 2018), new Time(10, 30));
 
 		bloggers.get(1).addPost(movie);
 
-		
 		bloggers.get(0).printBlogger();
 		bloggers.get(0).printPosts();
 
